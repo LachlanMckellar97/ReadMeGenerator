@@ -1,11 +1,10 @@
-# 
-    lladlll
+# Weather forcast application
     ![GitHub repo size](https://img.shields.io/github/repo-size/LachlanMckellar97/WeatherApp?style=for-the-badge) ![GitHub code size](https://img.shields.io/github/languages/code-size/LachlanMckellar97/WeatherApp?color=gold&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/LachlanMckellar97/WeatherApp?color=green&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/LachlanMckellar97/WeatherApp?color=red&style=for-the-badge)
     
     ---
 
     ## Description:
-    sdddddddddddddd
+    This app tracks weather
 
     ---
     ## Table of Contents:
@@ -18,11 +17,11 @@
     ---
 
     ## Installation:
-    dfghhhhhhhhhhhh
+    link
 
     ---
     ## Usage:
-    fghhhhhhhhhhhhhhh
+    check weather
 
     ---
     ## License:
@@ -30,10 +29,10 @@
 
     ---
     ## Contributing:
-    fghhhhhhhh
+    I have
 
     
-    Copyright © fghhhhhhhhhhh fghhhhhhhhhhh
+    Copyright © 2020 me
     
     ## Questions: 
     for any questions, please contact:

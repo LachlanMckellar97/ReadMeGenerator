@@ -1,6 +1,5 @@
 function generateMarkdown(answers, response) {
-  return `# 
-    ${answers.title}
+  return `# ${answers.title}
     ![GitHub repo size](https://img.shields.io/github/repo-size/${answers.username}/${answers.repoName}?style=for-the-badge) ![GitHub code size](https://img.shields.io/github/languages/code-size/${answers.username}/${answers.repoName}?color=gold&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/${answers.username}/${answers.repoName}?color=green&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/${answers.username}/${answers.repoName}?color=red&style=for-the-badge)
     
     ---
@@ -44,4 +43,5 @@ function generateMarkdown(answers, response) {
     __[${answers.username}](https://github.com/${answers.username})__ at ${response.data.email}`;
     }
 
+    
 module.exports = generateMarkdown;
