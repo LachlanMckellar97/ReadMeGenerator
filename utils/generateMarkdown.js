@@ -19,15 +19,19 @@ ${answers.installation}
 ${answers.usage}
 ---
 ## License:
+${answers.license}
 ---
 ## Contributing:
+${answers.contributing}
 ---
 Copyright © ${answers.year} ${answers.owner}
+---
 ## Questions: 
 for any questions, please contact:
 
-${answers.username} ${response.data.avatar_url}
-${answers.username} https://github.com/${answers.username} at ${response.data.email}
-`;}
+![${answers.username}](${response.data.avatar_url}) 
+
+__[${answers.username}](https://github.com/${answers.username})__ at ${response.data.email}`;
+}
 
 module.exports = generateMarkdown;

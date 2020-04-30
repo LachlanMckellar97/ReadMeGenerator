@@ -3,7 +3,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
 
-const apiKey = "3ccf88aae62962befc8f58f0ccfbbe6c0dbd77a5"; // insert your GitHub API key inside the quotation marks
+const apiKey = "604fd58e1faf8d9b7911f2f27134d6bf4e39dfbe"; // insert your GitHub API key inside the quotation marks
 
 const markdown = require("./utils/generateMarkdown.js")
 
@@ -21,7 +21,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the TITLE of your project' 
+        message: 'What is the TITLE of your project.' 
     },
     {
         type: 'input',
@@ -31,12 +31,32 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "Write a guide for Installation"
+        message: "Write a guide for Installation."
     },
     {
         type: "input",
         name: "usage",
         message: "Describe the usage of this application."
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Chose the license that applies.",
+        choices: [
+            "Apache License 2.0",
+            "Academic Free License v3.0",
+            "GNU General Public License v3.0",
+            "ISC",
+            "MIT License",
+            "Mozilla Public License 2.0",
+            "Open Software License 3.0",
+            "The Unlicense"
+        ]
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Who has contributed to this application?"
     },
     {
         type: 'input',
