@@ -1,12 +1,13 @@
-
+// VARIABLES ================================================
 const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
 
-const apiKey = "ac8a28e86e74d68fb367fefd2e407ce3ed546c61 "; // insert your GitHub API key inside the quotation marks
+const apiKey = ""; // insert your GitHub API key inside the quotation marks
 
 const markdown = require("./utils/generateMarkdown.js")
 
+// COMMAND-LINE PROMPTS ================================================
 const questions = [
     {
         type: 'input',
@@ -43,6 +44,7 @@ const questions = [
     }
 ];
 
+// WRITE USER INFO INTO A FILE ================================================
 function writeToFile(answers, response) {
     // console.log(markdown(answers, response));
     fs.writeFile("your-new-README.md", markdown(answers, response), function(err) {
@@ -53,6 +55,7 @@ function writeToFile(answers, response) {
     });
 }
 
+// COLLECT USER INFO, CALL API, CREATE MARKDOWN FILE ================================================
 function init() {
     inquirer
         .prompt(questions)
@@ -69,4 +72,5 @@ function init() {
         });
 }
 
+// CALL FUNCTION ================================================
 init();
