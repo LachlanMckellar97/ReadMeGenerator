@@ -16,7 +16,7 @@ ${answers.description}
 ${answers.installation}
 ---
 ## Usage:
-${answer.usage}
+${answers.usage}
 ---
 ## License:
 ---

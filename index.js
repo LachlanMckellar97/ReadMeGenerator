@@ -3,7 +3,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
 
-const apiKey = "1aed1a78f5158c6342b15d7046e055126fcf52cb"; // insert your GitHub API key inside the quotation marks
+const apiKey = "cd5cfff788b88a9832019e1dfcf984348a47e522"; // insert your GitHub API key inside the quotation marks
 
 const markdown = require("./utils/generateMarkdown.js")
 
