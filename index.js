@@ -3,7 +3,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
 
-const apiKey = "1aed1a78f5158c6342b15d7046e055126fcf52cb";
+const apiKey = "1aed1a78f5158c6342b15d7046e055126fcf52cb"; // insert your GitHub API key inside the quotation marks
 
 const markdown = require("./utils/generateMarkdown.js")
 
@@ -26,10 +26,17 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Enter a description of the project.',
-        default: function() {
-            return "";
-        } 
+        message: 'Enter a description of the project.'
+    },
+    {
+        type: "input",
+        name: "installation",
+        message: "Write a guide for Installation"
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "Describe the usage of this application."
     },
     {
         type: 'input',
