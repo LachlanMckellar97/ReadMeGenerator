@@ -24,9 +24,10 @@ ${answers.usage}
 ---
 Copyright © ${answers.year} ${answers.owner}
 ## Questions: 
-for any questions, please contact:/
-![${answers.username}](${response.data.avatar_url}) 
-[${answers.username}](https://github.com/${answers.username}) at ${response.data.email}
+for any questions, please contact:
+
+${answers.username} ${response.data.avatar_url}
+${answers.username} https://github.com/${answers.username} at ${response.data.email}
 `;}
 
 module.exports = generateMarkdown;
