@@ -1,33 +1,32 @@
-// VARIABLES ================================================
+
 const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
 
-const apiKey = ""; // insert your GitHub API key inside the quotation marks
+const apiKey = "1aed1a78f5158c6342b15d7046e055126fcf52cb";
 
 const markdown = require("./utils/generateMarkdown.js")
 
-// COMMAND-LINE PROMPTS ================================================
 const questions = [
     {
         type: 'input',
         name: 'username',
-        message: 'What is your GitHub USERNAME?' 
+        message: 'What is your GitHub username?' 
     },
     {
         type: 'input',
         name: 'repoName',
-        message: 'What is the NAME of your GitHub repository? (input must match the repo name EXACTLY!)' 
+        message: 'What is the NAME of your GitHub repository?' 
     },
     {
         type: 'input',
         name: 'title',
-        message: 'What is the TITLE of your project/application?' 
+        message: 'What is the TITLE of your project' 
     },
     {
         type: 'input',
         name: 'description',
-        message: 'Enter a DESCRIPTION of the project. (or press ENTER key to leave blank)',
+        message: 'Enter a description of the project.',
         default: function() {
             return "";
         } 
@@ -35,7 +34,7 @@ const questions = [
     {
         type: 'input',
         name: 'owner',
-        message: 'Who is the OWNER of this application? (enter your full name / company name (for copyright info)' 
+        message: 'Who is the OWNER of this application?' 
     },
     {
         type: 'input',
@@ -44,9 +43,7 @@ const questions = [
     }
 ];
 
-// WRITE USER INFO INTO A FILE ================================================
 function writeToFile(answers, response) {
-    // console.log(markdown(answers, response));
     fs.writeFile("your-new-README.md", markdown(answers, response), function(err) {
         if (err) {
             return console.log(err)
@@ -55,22 +52,18 @@ function writeToFile(answers, response) {
     });
 }
 
-// COLLECT USER INFO, CALL API, CREATE MARKDOWN FILE ================================================
 function init() {
     inquirer
         .prompt(questions)
         .then(function(answers) {
             console.log("collected user info", answers);
             const queryUrl = `https://api.github.com/users/${answers.username}?access_token=${apiKey}`
-            // console.log("full URL", queryUrl);
             axios
                 .get(queryUrl)
                 .then(function(response) {
-                    // console.log("get API response", response.data);
                     writeToFile(answers, response);
                 })
         });
 }
 
-// CALL FUNCTION ================================================
 init();

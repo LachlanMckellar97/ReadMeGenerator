@@ -1,16 +1,14 @@
-# Weather Forcast Site
+# Weather App
   ![GitHub repo size](https://img.shields.io/github/repo-size/LachlanMckellar97/WeatherApp?style=for-the-badge) ![GitHub code size](https://img.shields.io/github/languages/code-size/LachlanMckellar97/WeatherApp?color=gold&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/LachlanMckellar97/WeatherApp?color=green&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/LachlanMckellar97/WeatherApp?color=red&style=for-the-badge)
 ---
 ## Description:
-This weather app was made using the openweather api. It retrives a few weather stats and a 5 day forecast for a city the user inputs.
+weather app
 ---
 ## Table of Contents:
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Resources](#resources)
-* [Tests](#tests)
 * [Questions](#questions)
 ---
 ## Installation:
@@ -19,7 +17,7 @@ This weather app was made using the openweather api. It retrives a few weather s
 ---
 ## License:
 [MIT License](https://opensource.org/licenses/MIT)
-Copyright © 2010 Lachlan Mckelalr
+Copyright © 2020 me
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -129,12 +127,8 @@ enforcement ladder.
 For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
----
-## Resources:
----
-## Tests:
----
+
 ## Questions: 
 for any questions, please contact:
 ![LachlanMckellar97](https://avatars0.githubusercontent.com/u/60289567?v=4) 
-__[LachlanMckellar97](https://github.com/LachlanMckellar97)__ at null
+__[LachlanMckellar97](https://github.com/LachlanMckellar97)__ at lachlan.person@gmail.com
